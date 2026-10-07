@@ -1,14 +1,5 @@
 # round-2 — Investigate
 
-**Team:** BB-XXX
-**Queries used:** 0 / budget
-
-## What we concluded
-
-<!-- The short version. What is this system doing? -->
-
-## How we got there# round-2 — Investigate
-
 **Team:** BB-027
 **Queries used:** 5 / 120
 
@@ -43,13 +34,3 @@ Each experiment changed only one parameter so that the observed score change cou
 - We have not yet tested the remaining parameters in Round 2.
 - We do not yet know whether the effects of different parameters interact.
 - More experiments are required before making a complete model of the system.
-
-<!-- The experiments that mattered, in order. Why each one was worth a query. -->
-
-## What we ruled out
-
-<!-- Hypotheses you rejected and what killed them. This section carries real marks. -->
-
-## What we are still unsure about
-
-<!-- Being honest here scores better than overclaiming. -->

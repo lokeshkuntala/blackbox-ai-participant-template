@@ -1,17 +1,28 @@
 {
   "round": "round-2",
-  "team": "BB-XXX",
-  "queries_used": 0,
+  "team": "BB-027",
+  "queries_used": 5,
   "claims": [
     {
       "type": "feature_effect",
-      "feature": "x1",
-      "direction": "increases",
-      "strength": "strong",
-      "confidence": 0.0,
+      "feature": "container_count",
+      "direction": "no_effect",
+      "strength": "none",
+      "confidence": 1.0,
       "evidence": {
-        "query_ids": [],
-        "summary": "Replace this example claim with your own. Every claim needs evidence."
+        "query_ids": [2, 3],
+        "summary": "Changing container_count from the baseline value 50 to 0 and 100 produced the same score of 0.3544. No detectable score change was observed."
+      }
+    },
+    {
+      "type": "feature_effect",
+      "feature": "declared_value",
+      "direction": "decreases_score_when_increased_from_0_to_50",
+      "strength": "strong",
+      "confidence": 0.95,
+      "evidence": {
+        "query_ids": [4, 5],
+        "summary": "Changing declared_value from 50 to 0 increased the score from 0.3544 to 0.5488 (+0.1944). Changing it from 50 to 100 produced 0.3546, only +0.0002 from baseline."
       }
     }
   ]
