@@ -1,17 +1,16 @@
 {
   "round": "round-4",
-  "team": "BB-XXX",
-  "queries_used": 0,
+  "team": "BB-027",
+  "queries_used": 32,
   "claims": [
     {
-      "type": "feature_effect",
-      "feature": "x1",
-      "direction": "increases",
-      "strength": "strong",
-      "confidence": 0.0,
+      "type": "failure_region",
+      "feature": "port",
+      "observed": "unstable",
+      "confidence": 0.96,
       "evidence": {
         "query_ids": [],
-        "summary": "Replace this example claim with your own. Every claim needs evidence."
+        "summary": "Held-out evaluation shows that Port C behaves as a distinct difficult-to-model region. Ridge achieved 96.875% decision accuracy (31/32) and Kernel Ridge achieved 93.75% (30/32), but both models had their largest score errors on the Port C point: 0.8544 for Ridge and 0.7677 for Kernel Ridge. Removing the Port C point substantially improved Ridge from R2=0.5316 and MAE=0.0566 to R2=0.952 and MAE=0.031, while Kernel Ridge improved from R2=0.6008 and MAE=0.051 to R2=0.931 and MAE=0.028. This indicates that Port C represents a distinct or unstable region relative to the dominant scoring relationship."
       }
     }
   ]
